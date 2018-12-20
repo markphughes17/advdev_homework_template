@@ -90,7 +90,7 @@ podTemplate(
 
         openshiftDeploy depCfg: 'tasks', namespace: '${GUID}-tasks-dev', verbose: 'false', waitTime: '', waitUnit: 'sec'
         openshiftVerifyDeployment depCfg: 'tasks', namespace: '${GUID}-tasks-dev', replicaCount: '1', verbose: 'false', verifyReplicaCount: 'false', waitTime: '', waitUnit: 'sec'
-        openshiftVerifyService namespace: '${GUID}-tasks-dev, svcName: 'tasks', verbose: 'false'
+        openshiftVerifyService namespace: '${GUID}-tasks-dev', svcName: 'tasks', verbose: 'false'
       }
 
       // Copy Image to Nexus container registry
