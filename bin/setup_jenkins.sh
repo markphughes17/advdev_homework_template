@@ -25,7 +25,7 @@ echo "apiVersion: v1
 items:
 - kind: "BuildConfig"
   apiVersion: "v1"
-  metaData:
+  metadata:
     name: "tasks-pipeline"
   spec:
     source:
